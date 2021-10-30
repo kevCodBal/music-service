@@ -1,0 +1,16 @@
+server:
+  port: 1030
+  servlet:
+    context-path: /music
+
+
+spring:
+  application:
+    name: music-service
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:1010/eureka/
